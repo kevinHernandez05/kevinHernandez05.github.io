@@ -2,7 +2,7 @@ import './App.css';
 
 //Components
 import Navbar from './components/navbar/navbar';
-import About from './components/about/about'
+import Header from './components/header/header'
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <main className="App-header">
         <Navbar name = "Kevin Hernandez"/>
-        <About job = 'Presidencia de la Republica Dominicana; Programa Supérate'/>
+        <Header name = "Kevin Hernandez" job = 'Presidencia de la Republica Dominicana; Programa Supérate.'/>
       </main>
     </div>
   );
