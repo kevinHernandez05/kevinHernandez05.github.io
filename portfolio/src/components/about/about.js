@@ -3,7 +3,7 @@ import ProfilePic from './images/profile.jpeg';
 
 export default function About(props) {
     return (
-        <section class="px-36 grid grid-cols-2">
+        <section class="section sm:px-12 md:px-24 lg:px-36 xl:px-96 grid grid-cols-2">
             <div class="px-2">
                 <p class="font-semibold">01. About me</p> 
                 <hr></hr>
@@ -20,14 +20,14 @@ export default function About(props) {
                     <span class="m-1 bg-teal-800 rounded-full px-2 font-bold text-sm leading-loose">Vue.js</span>
                     <span class="m-1 bg-teal-800 rounded-full px-2 font-bold text-sm leading-loose">Ionic</span>
                     <span class="m-1 bg-teal-800 rounded-full px-2 font-bold text-sm leading-loose">Node.js</span>
-                    <span class="m-1 bg-teal-800 rounded-full px-2 font-bold text-sm leading-loose">TailwindCSS</span>
+                    <span class="m-1 bg-teal-800 rounded-full px-2 font-bold text-sm leading-loose">Tailwind</span>
                     <span class="m-1 bg-teal-800 rounded-full px-2 font-bold text-sm leading-loose">React</span>
-                    <span class="m-1 bg-teal-800 rounded-full px-2 font-bold text-sm leading-loose">Tensorflowjs</span>
+                    <span class="m-1 bg-teal-800 rounded-full px-2 font-bold text-sm leading-loose">Tfjs</span>
                     <span class="m-1 bg-teal-800 rounded-full px-2 font-bold text-sm leading-loose">web3js</span>
                 </div>
             </div>
 
-            <div class="profilePicDiv px-2 flex items-center justify-center">
+            <div class="profilePicDiv px-2 flex items-start justify-center">
                 <img class="profilePic" width="250" height="250" src={ProfilePic} alt="Profile Photo"></img>
             </div>
         </section>

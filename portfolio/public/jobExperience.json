@@ -1,0 +1,39 @@
+{
+    "jobs": [
+      {
+        "date": "Jul, 2019 - Today",
+        "contract" : "Full Time",
+        "title" : "Software Developer",
+        "place": "Presidencia de la República Dominicana; Programa Supérate",
+        "todo" : "Responsible for the development of web applications written with web technologies: Asp.Net mvc5 / .net Core, jQuery and Angular using design patterns such as MVC and MVVM. I develop modules and new functions for the systems used in this institution.",
+        "duties": [
+          "Develop the necessary analysis and programs to improve, complete or expand existing systems, according to user needs.",
+          "Responsible for developing and maintaining the institution's web applications.",
+          "Pipelines settings in Azure DevOps Server (On Premise) for CI / CD."
+          ]
+      },
+      
+      {
+        "date": "Jul, 2020 - Dic, 2020",
+        "contract" : "Freelancer",
+        "title" : "Web Developer",
+        "place": "Bluely Studios",
+        "todo" : "",
+        "duties": [
+          "Responsible of developing a web page for Bluely Studios with Ionic and Angular."
+          ]
+      },
+      
+      {
+        "date": "Oct, 2017 - Nov, 2018",
+        "contract" : "Freelancer",
+        "title" : "Ionic Developer",
+        "place": "ED2 Partners & Brothers",
+        "todo" : "I developed an application with Ionic 2, angular and its backend in PHP called Workbefy; it offers a list of services in which people who are registered can request to workers that are available on the App.",
+        "duties": [
+          "Responsible for developing the mobile application with Ionic 2",
+          "Responsible for developing the REST with PHP"
+          ]
+      }
+    ]
+  }

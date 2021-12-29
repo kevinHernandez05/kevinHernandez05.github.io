@@ -1,6 +1,6 @@
 export default function Header(props){
     return(
-        <section class="mt-20 px-24">
+        <section class="section mt-20 px-24">
             <div class="max-w-2xl px-12">
                 
                 <p class="font-semibold text-white-800">Howdy, Mate! My name is</p>
