@@ -1,16 +1,16 @@
 export default function Header(props){
     return(
-        <section class="section mt-20 px-24">
+        <section class="section px-24 grid place-items-center">
             <div class="max-w-2xl px-12">
                 
-                <p class="font-semibold text-white-800">Howdy, Mate! My name is</p>
-                <h2 class="text-7xl text-white-600 mt-4">{props.name}.</h2>
-                <h2 class="text-5xl text-white-600 mt-4">I Build stuff for the internet.</h2>
+                <p class="text-white-800 text-sm">Howdy, Mate! My name is</p>
+                <h1 class="text-7xl text-white-600 mt-4 ">{props.name}.</h1>
+                <h1 class="text-5xl text-white-300 mt-4 opacity-60">I Build stuff for the internet.</h1>
 
-                <p class="text-white-800 mt-4">
+                <h1 class="text-white-800 mt-4 text-2xl opacity-60">
                     I’m a software engineer specializing in building (and occasionally designing) 
                     exceptional digital experiences. Currently, { workingPlace(props.job) } 
-                </p>
+                </h1>
 
                 <div class="flex items-end justify-center mt-16">
                    
