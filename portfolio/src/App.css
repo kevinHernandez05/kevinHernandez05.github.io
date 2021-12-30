@@ -1,0 +1,34 @@
+/*Tailwind base*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Fonts import*/
+
+@import url('./fonts/SFMono.css');
+h1 {
+    font-family: SF Mono Regular;
+    color: #5ae7c8;
+}
+
+p{
+    font-family: SF Mono Regular;
+}
+
+.App-header {
+    background-color: #0a192f;
+    min-height: 100vh;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+}
+
+.job-section {
+    width: 100%;
+   
+}
