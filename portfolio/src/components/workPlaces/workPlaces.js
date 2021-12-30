@@ -36,15 +36,16 @@ const WorkPlaces = props => {
 
     return (
 
-        <section class="job-section sm:px-12 md:px-24 lg:px-36 xl:px-96">
-           
+        <section class="job-section md:px-24 lg:px-36 xl:px-96">
+            {/* px-12 */}
             <div class="grid grid-cols-2">
                 <div class="px-2">
                     <h1 class="font-semibold">02. Where I've Worked</h1>
                     <hr class="py-8"></hr>
                 </div>
             </div>
-                {
+            <div class="px-12">
+            {
                     jobLoaded ?
                         (
                             job.map((job, index) => {
@@ -103,9 +104,10 @@ const WorkPlaces = props => {
                             </div>
                         )
                 }
+            </div>
 
         </section>
-        
+
     );
 }
 
