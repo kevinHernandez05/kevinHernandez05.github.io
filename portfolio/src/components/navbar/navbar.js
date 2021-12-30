@@ -28,7 +28,7 @@ export default function Navbar(props) {
             </a>
 
             <div class="border-solid border-2 border-light-blue-500">
-              <a class="flex items-center mx-2 text-gray-800 hover:text-indigo-600" href="#">
+              <a class="flex items-center mx-2 text-gray-800 hover:text-indigo-600" href="resume.pdf" download={"Kevin Hernandez - Curriculum Vitae.pdf"}>
                 <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                   <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
                 </svg>

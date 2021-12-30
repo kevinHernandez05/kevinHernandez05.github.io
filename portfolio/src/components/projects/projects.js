@@ -6,7 +6,7 @@ export default function projects(props) {
         <section class="section px-36">
             <div class="grid grid-cols-2">
                 <div class="px-2">
-                    <p class="font-semibold">03. Stuff I've Builded</p>
+                    <h1 class="font-semibold">03. Stuff I've Builded</h1>
                     <hr></hr>
                 </div>
             </div>
@@ -18,11 +18,7 @@ export default function projects(props) {
                 <div class="">
                     information
                 </div>
-                
-               
             </div>
-
-
         </section>
     )
 }
