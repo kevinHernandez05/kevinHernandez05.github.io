@@ -5,7 +5,7 @@ export default function About(props) {
     return (
         <section class="section sm:px-12 md:px-24 lg:px-36 xl:px-96 grid grid-cols-2">
             <div class="px-2">
-                <p class="font-semibold">01. About me</p> 
+                <h1 class="font-semibold">01. About me</h1> 
                 <hr></hr>
                 <p class="text-lg mt-12">
                     Hello, my name is {props.name} and I enjoy creating things that live on the internet.
@@ -15,15 +15,15 @@ export default function About(props) {
                     Making software with technologies such as:
                 </p>
                 <div class="grid grid-cols-3 text-center py-5">
-                    <span class="m-1 bg-teal-800 rounded-full px-2 font-bold text-sm leading-loose">.Net Core</span>
-                    <span class="m-1 bg-teal-800 rounded-full px-2 font-bold text-sm leading-loose">Angular</span>
-                    <span class="m-1 bg-teal-800 rounded-full px-2 font-bold text-sm leading-loose">Vue.js</span>
-                    <span class="m-1 bg-teal-800 rounded-full px-2 font-bold text-sm leading-loose">Ionic</span>
-                    <span class="m-1 bg-teal-800 rounded-full px-2 font-bold text-sm leading-loose">Node.js</span>
-                    <span class="m-1 bg-teal-800 rounded-full px-2 font-bold text-sm leading-loose">Tailwind</span>
-                    <span class="m-1 bg-teal-800 rounded-full px-2 font-bold text-sm leading-loose">React</span>
-                    <span class="m-1 bg-teal-800 rounded-full px-2 font-bold text-sm leading-loose">Tfjs</span>
-                    <span class="m-1 bg-teal-800 rounded-full px-2 font-bold text-sm leading-loose">web3js</span>
+                    <p class="m-1 rounded-full px-2 font-bold text-sm leading-loose"><span class="fab fa-angellist"></span>.Net Core</p>
+                    <p class="m-1 rounded-full px-2 font-bold text-sm leading-loose"><span class="fab fa-angellist"></span>Angular</p>
+                    <p class="m-1 rounded-full px-2 font-bold text-sm leading-loose"><span class="fab fa-angellist"></span>Vue.js</p>
+                    <p class="m-1 rounded-full px-2 font-bold text-sm leading-loose"><span class="fab fa-angellist"></span>Ionic</p>
+                    <p class="m-1 rounded-full px-2 font-bold text-sm leading-loose"><span class="fab fa-angellist"></span>Node.js</p>
+                    <p class="m-1 rounded-full px-2 font-bold text-sm leading-loose"><span class="fab fa-angellist"></span>Tailwind</p>
+                    <p class="m-1 rounded-full px-2 font-bold text-sm leading-loose"><span class="fab fa-angellist"></span>React</p>
+                    <p class="m-1 rounded-full px-2 font-bold text-sm leading-loose"><span class="fab fa-angellist"></span>Tfjs</p>
+                    <p class="m-1 rounded-full px-2 font-bold text-sm leading-loose"><span class="fab fa-angellist"></span>web3js</p>
                 </div>
             </div>
 

@@ -7,7 +7,12 @@
 /*Fonts import*/
 
 @import url('./fonts/SFMono.css');
-p {
+h1 {
+    font-family: SF Mono Regular;
+    color: #5ae7c8;
+}
+
+p{
     font-family: SF Mono Regular;
 }
 

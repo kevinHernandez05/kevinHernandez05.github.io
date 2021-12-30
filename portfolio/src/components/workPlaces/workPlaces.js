@@ -38,8 +38,8 @@ const WorkPlaces = props => {
         <section class="section sm:px-12 md:px-24 lg:px-36 xl:px-96">
             <div class="grid grid-cols-2">
                 <div class="px-2">
-                    <p class="font-semibold">02. Where I've Worked</p>
-                    <hr></hr>
+                    <h1 class="font-semibold">02. Where I've Worked</h1>
+                    <hr class="py-8"></hr>
                 </div>
             </div>
 
@@ -49,31 +49,49 @@ const WorkPlaces = props => {
                         job.map((job, index) => {
 
                             return (
-                                <div class="sm:px-4 md:px-4 lg:px-10 xl:px-2">
-                                    <div class="border-l-2 mt-10">
-                                        <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-blue-600 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
-                                            <div class="w-5 h-5 bg-blue-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
-                                            <div class="w-10 h-1 bg-blue-300 absolute -left-10 z-0"></div>
+                                <div class="py-3">
+                                    <div
+                                    class="relative lx:w-1/2 bg-gray-900 block p-7 border border-gray-100 rounded-lg"
+                                >
+                                    <span
+                                        class="absolute inset-x-0 bottom-0 h-2  bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"
+                                    ></span>
 
-                                            <div class="flex-auto">
-                                                <h1 class="text-lg">{job.date}</h1>
-                                                <h1 class="text-sm py-2">{job.contract}</h1>
-                                                <h1 class="text-xl font-bold">{`${job.title} @ ${job.place}`}</h1>
-                                                <h1 class="text-lg">{job.todo}</h1>
+                                    <div class="justify-between sm:flex">
+                                        <div>
+                                            <h5 class="text-xl font-bold text-gray-100">
+                                                {job.title} @ {job.place}
+                                            </h5>
+                                            <p class="mt-1 text-xs font-medium text-gray-400">By Kevin Hernandez</p>
+                                        </div>
 
-                                                {job.duties.map((duty) => {
-
-                                                    return (
-                                                        <ul class="px-5 py-2 list-disc">
-                                                            <li class="text-lg">{duty}</li>
-                                                        </ul>
-                                                    );
-                                                })}
-                                            </div>
-                                            <img height='150px' width='150px' class="text-center text-white hover:text-gray-300" src={images[index]}></img>
-
+                                        <div class="flex-shrink-0  hidden ml-3 sm:block">
+                                            <img
+                                                class="object-cover bg-white w-16 h-16 rounded-lg shadow-sm"
+                                                src={images[index]}
+                                                alt=""
+                                            />
                                         </div>
                                     </div>
+
+                                    <div class="mt-4 sm:pr-8">
+                                        <p class="text-sm text-gray-200">
+                                            {job.todo}
+                                        </p>
+                                    </div>
+
+                                    <dl class="flex mt-6">
+                                        <div class="flex flex-col-reverse">
+                                            <dt class="text-sm font-medium text-gray-400">Date</dt>
+                                            <dd class="text-xs text-gray-300">{job.date}</dd>
+                                        </div>
+
+                                        <div class="flex flex-col-reverse ml-3 sm:ml-6">
+                                            <dt class="text-sm font-medium text-gray-400">Reading time</dt>
+                                            <dd class="text-xs text-gray-300">3 minute</dd>
+                                        </div>
+                                    </dl>
+                                </div>
                                 </div>
                             )
                         })
