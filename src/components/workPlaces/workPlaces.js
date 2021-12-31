@@ -38,7 +38,7 @@ const WorkPlaces = props => {
 
         <section class="job-section md:px-24 lg:px-36 xl:px-96">
             {/* px-12 */}
-            <div class="grid grid-cols-2">
+            <div class="px-7 grid md:grid-cols-2">
                 <div class="px-2">
                     <h1 class="font-semibold">02. Where I've Worked</h1>
                     <hr class="py-8"></hr>
