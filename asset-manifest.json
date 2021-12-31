@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.96505440.css",
-    "main.js": "/static/js/main.a035af99.js",
-    "static/js/588.67014f07.chunk.js": "/static/js/588.67014f07.chunk.js",
+    "main.css": "/static/css/main.390f062c.css",
+    "main.js": "/static/js/main.1faf8bd4.js",
+    "static/js/588.a712e8b7.chunk.js": "/static/js/588.a712e8b7.chunk.js",
     "static/js/787.9b9c0edf.chunk.js": "/static/js/787.9b9c0edf.chunk.js",
     "static/media/profile.jpeg": "/static/media/profile.e7d1d65305754670695a.jpeg",
     "static/media/MeditatingDoodle.svg": "/static/media/MeditatingDoodle.839cef702bd1ac48b0396774afdadd42.svg",
@@ -21,13 +21,13 @@
     "static/media/SFMonoLight.woff": "/static/media/SFMonoLight.d4b43e061c89b250a3e7.woff",
     "static/media/bluely.png": "/static/media/bluely.00404e8940814b12da35.png",
     "index.html": "/index.html",
-    "main.96505440.css.map": "/static/css/main.96505440.css.map",
-    "main.a035af99.js.map": "/static/js/main.a035af99.js.map",
-    "588.67014f07.chunk.js.map": "/static/js/588.67014f07.chunk.js.map",
+    "main.390f062c.css.map": "/static/css/main.390f062c.css.map",
+    "main.1faf8bd4.js.map": "/static/js/main.1faf8bd4.js.map",
+    "588.a712e8b7.chunk.js.map": "/static/js/588.a712e8b7.chunk.js.map",
     "787.9b9c0edf.chunk.js.map": "/static/js/787.9b9c0edf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.96505440.css",
-    "static/js/main.a035af99.js"
+    "static/css/main.390f062c.css",
+    "static/js/main.1faf8bd4.js"
   ]
 }
