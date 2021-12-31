@@ -3,7 +3,7 @@ import ProfilePic from './images/profile.jpeg';
 
 export default function About(props) {
     return (
-        <section class="section sm:px-12 md:px-24 lg:px-36 xl:px-96 grid md:grid-cols-2">
+        <section class="py-24 px-7 md:px-24 lg:px-36 xl:px-96 grid md:grid-cols-2">
             <div class="px-2">
                 <h1 class="font-semibold">01. About me</h1> 
                 <hr></hr>
