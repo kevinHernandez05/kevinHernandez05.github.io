@@ -57,7 +57,7 @@ const WorkPlaces = props => {
                                             class="relative lx:w-1/2 bg-gray-900 block p-7 border border-gray-100 rounded-lg"
                                         >
                                             <span
-                                                class="absolute inset-x-0 bottom-0 h-2  bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"
+                                                class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r rounded-b-lg from-green-300 via-blue-500 to-purple-600"
                                             ></span>
 
                                             <div class="justify-between sm:flex">
@@ -91,7 +91,7 @@ const WorkPlaces = props => {
 
                                                 <div class="flex flex-col-reverse ml-3 sm:ml-6">
                                                     <dt class="text-sm font-medium text-gray-400">URL</dt>
-                                                    <dd class="text-xs text-gray-300">Not at the moment. (coming soon)</dd>
+                                                    <dd class="text-xs text-gray-300">Not at the moment.</dd>
                                                 </div>
                                             </dl>
                                         </div>
@@ -100,7 +100,7 @@ const WorkPlaces = props => {
                             })
                         ) : (
                             <div class="px-24">
-                                <h1>Loading...</h1>
+                               
                             </div>
                         )
                 }

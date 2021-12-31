@@ -1,5 +1,4 @@
-import Doodle from './images/MeditatingDoodle.svg';
-
+import UnderConstruction from '../../underConstruction/underconstruction';
 
 export default function projects(props) {
     return (
@@ -11,10 +10,10 @@ export default function projects(props) {
                 </div>
             </div>
 
-            <div class="grid place-items-center px-10 py-12 ">
+            <div class="">
 
-                <img class="bg-white" src={Doodle} height="250px" width="250px"></img>
-                <p class="py-5">This section is under construction, will be here any soon!</p>
+               <UnderConstruction />
+
             </div>
         </section>
     )
