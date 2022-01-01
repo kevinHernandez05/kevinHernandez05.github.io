@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import projects from '../projects/projects';
+import Workbefy from '../projects/images/workbefy.png';
+import EthWallet from '../projects/images/etherumionic.png';
+import AwesomeNetCoreBoilerplate from '../projects/images/awesome-boilerplate.png';
+import Pomodoro from '../projects/images/pomodoro.png';
+import Bluely from '../projects/images/bluely.png';
 
 const Card = props => {
 
-    let images = [];
+    let images = [Workbefy, EthWallet, AwesomeNetCoreBoilerplate, Pomodoro, Bluely];
 
     const [project, setProject] = useState([]);
     const [projectLoaded, setProjectLoaded] = useState(false);
@@ -23,10 +27,12 @@ const Card = props => {
         (async () => {
             setProjectLoaded(false);
 
+            //projects.json
             let res = await fetchProjects();
+
             if (res.success) {
                 setProject(res.data.jobs);
-                console.log(project, projectLoaded);
+    
                 setProjectLoaded(true);
             }
         })();
@@ -43,8 +49,8 @@ const Card = props => {
                             return (
 
                                 <div class="p-4" key={index}>
-                                    <div class="h-full border-2 border-gray-200 rounded-lg overflow-hidden grid grid-cols-1 lg:grid-cols-2">
-                                        <img class="h-full object-cover object-center" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80" alt="Proyecto">
+                                    <div class="h-full border-2 border-gray-200 rounded-lg overflow-hidden grid-cols-1 lg:grid-cols-2">
+                                        <img class="h-full w-full object-cover object-center" src={images[index]} alt="Proyecto">
                                         </img>
                                         <div class="p-6">
                                             <p class="leading-relaxed mb-3">{proj.title}</p>
