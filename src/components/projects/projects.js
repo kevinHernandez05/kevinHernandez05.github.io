@@ -1,4 +1,5 @@
 import UnderConstruction from '../../underConstruction/underconstruction';
+import Card from '../card/card'; 
 
 export default function projects(props) {
     return (
@@ -10,11 +11,9 @@ export default function projects(props) {
                 </div>
             </div>
 
-            <div class="">
+            <Card />
 
-               <UnderConstruction />
-
-            </div>
+            
         </section>
     )
 }
