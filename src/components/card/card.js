@@ -79,7 +79,6 @@ const Card = props => {
                                     </div>
                                 </div>
                             );
-
                         })
 
                     ) : (
