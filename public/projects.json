@@ -14,7 +14,7 @@
       "place": "Personal Project",
       "description": "This mobile application aims to consult wallets within the Ethereum Network through the Infura interface, it shows the number of transactions made and how much ETH has in the wallet.",
       "tags": "#TS #Ionic #Angular #TailwindCSS #web3js #Infura",
-      "href": ""
+      "href": "https://github.com/kevinHernandez05/ethwallet"
     },
     {
       "date": "July 26th; 2021 – (Last Commit)",

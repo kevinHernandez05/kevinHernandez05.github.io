@@ -8,6 +8,7 @@ import Header from './components/header/header';
 import About from './components/about/about';
 import Projects from './components/projects/projects';
 import Footer from './components/footer/footer';
+import Contact from './components/contact/contact';
 
 
 const WorkPlaces = React.lazy(() => import('./components/workPlaces/workPlaces'));
@@ -29,6 +30,7 @@ function App() {
         
         <span className='section'></span>
         <Projects />
+        <Contact />
         <Footer />
       </main>
     </div>
