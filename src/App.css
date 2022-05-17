@@ -32,3 +32,27 @@ p{
     width: 100%;
    
 }
+
+/*Mansory cards*/
+
+@layer utilities {
+    @variants responsive {
+        .masonry {
+            column-gap: 1.5em;
+            column-count: 1;
+        }
+        .masonry-sm {
+            column-gap: 1.5em;
+            column-count: 2;
+        }
+        .masonry-md {
+            column-gap: 1.5em 1.5em;
+            column-count: 3;
+        }
+        .break-inside {
+            margin-bottom: 0.5em;
+            break-inside: avoid;
+        }
+
+    }
+}
