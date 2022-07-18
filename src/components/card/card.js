@@ -17,9 +17,15 @@ const Card = (props) => {
   const [project, setProject] = useState([]);
   const [projectLoaded, setProjectLoaded] = useState(false);
 
+  // const projectsUrl =
+  //   "https://github.com/kevinHernandez05/kevinHernandez05.github.io/blob/reactProposal/public/projects.json";
+
   const fetchProjects = async () => {
     try {
       let response = await fetch("./projects.json");
+      // let response = await fetch(projectsUrl, {
+      //   mode: 'no-cors' // 'cors' by default
+      // })
       let json = await response.json();
       return { success: true, data: json };
     } catch (error) {
