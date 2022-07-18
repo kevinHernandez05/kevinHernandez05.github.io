@@ -66,10 +66,20 @@ const Card = (props) => {
               ></img>
               <div class="p-6">
                 <p class="leading-relaxed mb-3">{proj.title}</p>
-                <h1 class="tracking-widest text-lg title-font font-medium text-gray-500 mb-1">
-                  {proj.tags}
-                </h1>
-                <h1 class="tracking-widest text-lg title-font font-medium text-gray-500 mb-1">
+
+                <div className="flex flex-wrap">
+                  {proj.tags.map((tag, index) => {
+                    return (
+                      <h1
+                        key={index}
+                        class="mx-2 p-[3px]  tracking-widest text-lg title-font font-medium text-gray-500 mb-1 text-black bg-white"
+                      >
+                        {tag}
+                      </h1>
+                    );
+                  })}
+                </div>
+                <h1 class="tracking-widest text-lg title-font font-medium text-gray-500 mb-1 mt-2">
                   {proj.description}
                 </h1>
                 <div class="flex items-center flex-wrap ">

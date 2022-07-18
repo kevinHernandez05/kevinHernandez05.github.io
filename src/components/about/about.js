@@ -15,15 +15,13 @@ export default function About(props) {
                     Making software with technologies such as:
                 </p>
                 <div class="grid grid-cols-3 text-center py-5">
-                    <p class="m-1 rounded-full px-2 font-bold text-sm leading-loose">.Net Core</p>
+                    <p class="m-1 rounded-full px-2 font-bold text-sm leading-loose">.Net</p>
                     <p class="m-1 rounded-full px-2 font-bold text-sm leading-loose">Angular</p>
-                    <p class="m-1 rounded-full px-2 font-bold text-sm leading-loose">Vue.js</p>
                     <p class="m-1 rounded-full px-2 font-bold text-sm leading-loose">Ionic</p>
                     <p class="m-1 rounded-full px-2 font-bold text-sm leading-loose">Node.js</p>
                     <p class="m-1 rounded-full px-2 font-bold text-sm leading-loose">Tailwind</p>
                     <p class="m-1 rounded-full px-2 font-bold text-sm leading-loose">React</p>
-                    <p class="m-1 rounded-full px-2 font-bold text-sm leading-loose">Tfjs</p>
-                    <p class="m-1 rounded-full px-2 font-bold text-sm leading-loose">web3js</p>
+                    <p class="m-1 rounded-full px-2 font-bold text-sm leading-loose">web3</p>
                 </div>
             </div>
 

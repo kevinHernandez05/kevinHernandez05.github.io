@@ -3,7 +3,7 @@ export default function Contact(props) {
         <section class="job-section md:px-24 lg:px-36 xl:px-96 py-24">
             <div class="px-7 grid md:grid-cols-2">
                 <div class="px-2">
-                    <h1 class="font-semibold">06. Contact</h1>
+                    <h1 class="font-semibold">05. Contact</h1>
                     <hr></hr>
                 </div>
             </div>
