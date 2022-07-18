@@ -5,7 +5,7 @@
       "title": "Workbefy",
       "place": "ED2 Partners & Brothers",
       "description": "This mobile application aims to put you in contact with people who need especific services: Cleaning, plumbing, automotive mechanics, among other professions.",
-      "tags": "#TS #Ionic #mySql #PHP",
+      "tags": ["#TS", "#Ionic", "#mySql", "#PHP"],
       "href": ""
     },
     {
@@ -13,7 +13,7 @@
       "title": "Ionic Ethereum Wallet",
       "place": "Personal Project",
       "description": "This mobile application aims to consult wallets within the Ethereum Network through the Infura interface, it shows the number of transactions made and how much ETH has in the wallet.",
-      "tags": "#TS #Ionic #Angular #TailwindCSS #web3js #Infura",
+      "tags": ["#TS", "#Ionic", "#Angular", "#TailwindCSS", "#web3js", "#Infura"],
       "href": "https://github.com/kevinHernandez05/ethwallet"
     },
     {
@@ -21,7 +21,7 @@
       "title": "Awesome boilerplate netcore",
       "place": "Personal Project",
       "description": "This is a boilerplate made with net core 3.1 and Entity Framework, thought to reduce the development time when creating new projects in .Net Core.",
-      "tags": "#Vue #.net Core #Bootstrap #jQuery",
+      "tags": ["#Vue", "#.net Core", "#Bootstrap", "#jQuery"],
       "href": "https://github.com/kevinHernandez05/awesome-boilerplate-netcore"
     },
     {
@@ -29,7 +29,7 @@
       "title": "Pomodoro Timer",
       "place": "Personal Project",
       "description": "This web application is a mobile app that helps you to apply the Pomodoro Technique when completing a list of things to do.",
-      "tags": "#TS #Ionic #Angular #TailwindCSS #.net Core",
+      "tags": ["#TS", "#Ionic", "#Angular", "#TailwindCSS", "#.net Core"],
       "href": ""
       
     },
@@ -38,7 +38,7 @@
       "title": "Bluely Studios web page",
       "place": "Bluely Studios",
       "description": "Responsible of developing a web page for Bluely Studios with Ionic and Angular.",
-      "tags": "#TS #Ionic #Angular #Firebase",
+      "tags": ["#TS", "#Ionic", "#Angular", "#Firebase"],
       "href": ""
       
     }
