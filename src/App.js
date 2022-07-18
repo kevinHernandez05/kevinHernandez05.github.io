@@ -9,6 +9,7 @@ import About from './components/about/about';
 import Projects from './components/projects/projects';
 import Footer from './components/footer/footer';
 import Contact from './components/contact/contact';
+import Courses from './components/courses/courses';
 
 //konami code
 import KonamiCode from './components/konamicode/konamiCode';
@@ -35,7 +36,9 @@ function App() {
 
         <span className='section'></span>
         <Projects />
+        {/* <Courses /> */}
         <Contact />
+
         <Footer />
       </main>
     </div>
