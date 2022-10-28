@@ -1,4 +1,3 @@
-import UnderConstruction from "../../underConstruction/underconstruction";
 import Card from "../card/card";
 
 export default function projects(props) {
