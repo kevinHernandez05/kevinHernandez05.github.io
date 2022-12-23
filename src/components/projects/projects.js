@@ -12,6 +12,7 @@ export default function projects(props) {
         </div>
       </section>
       <Card />
+    
     </>
   );
 }
