@@ -1,10 +1,10 @@
 {
   "jobs": [
     {
-      "date": "October; 2017, November; 2018",
+      "date": "October; 2017 - November; 2018",
       "title": "Workbefy",
       "place": "ED2 Partners & Brothers",
-      "description": "This mobile application aims to put you in contact with people who need especific services: Cleaning, plumbing, automotive mechanics, among other professions.",
+      "description": "Workbefy is a mobile app that connects you with skilled professionals in a variety of fields, including cleaning, plumbing, and automotive mechanics. You can browse profiles, view ratings and reviews, and message professionals directly to discuss your project and get a quote. Payment is securely handled through the app. Workbefy is a convenient and reliable way to find the help you need for any home or business project.",
       "tags": ["#TS", "#Ionic", "#mySql", "#PHP"],
       "href": ""
     },
@@ -12,7 +12,7 @@
       "date": "July 26th; 2021 – (Last Commit)",
       "title": "Ionic Ethereum Wallet",
       "place": "Personal Project",
-      "description": "This mobile application aims to consult wallets within the Ethereum Network through the Infura interface, it shows the number of transactions made and how much ETH has in the wallet.",
+      "description": "The Ionic app allows users to view the balances and transaction history of Ethereum wallets within the Ethereum network through the Infura interface. It displays the number of transactions made and the amount of ETH in the wallet. The app has a user-friendly interface and connects to Infura for secure access to information. It is a convenient and reliable way to stay up to date on the status of Ethereum wallets.",
       "tags": ["#TS", "#Ionic", "#Angular", "#TailwindCSS", "#web3js", "#Infura"],
       "href": "https://github.com/kevinHernandez05/ethwallet"
     },
@@ -20,7 +20,7 @@
       "date": "July 26th; 2021 – (Last Commit)",
       "title": "Awesome boilerplate netcore",
       "place": "Personal Project",
-      "description": "This is a boilerplate made with net core 3.1 and Entity Framework, thought to reduce the development time when creating new projects in .Net Core.",
+      "description": "The .NET Core 3.1 boilerplate is a pre-configured project template designed to help developers quickly get up and running with new .NET Core projects. It includes the latest version of Entity Framework and is fully customizable to fit the specific needs of the project.",
       "tags": ["#Vue", "#.net Core", "#Bootstrap", "#jQuery"],
       "href": "https://github.com/kevinHernandez05/awesome-boilerplate-netcore"
     },
@@ -41,6 +41,13 @@
       "tags": ["#TS", "#Ionic", "#Angular", "#Firebase"],
       "href": ""
       
+    }, {
+      "date": "Nov, 2022 - (Last Commit)",
+      "title": "Bono Emergencia",
+      "place": "Programa Superate",
+      "description": "The \"Bono Emergencia\" web page is a platform created by the government of the Dominican Republic to provide financial assistance to families affected by Hurricane Fiona. The web page allows users to consult whether they are eligible to receive a bonus, which is a one-time payment intended to help cover emergency expenses and damages caused by the hurricane.",
+      "tags": ["#.Net Core", "#Bootstrap", "#Sql Server", "#Ado.net", "#Jquery"],
+      "href": "https://bonoemergencia.superate.gob.do/"
     }
   ]
 }
