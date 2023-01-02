@@ -1,4 +1,3 @@
-import UnderConstruction from "../../underConstruction/underconstruction";
 import Card from "../card/card";
 
 export default function projects(props) {
@@ -13,6 +12,7 @@ export default function projects(props) {
         </div>
       </section>
       <Card />
+    
     </>
   );
 }
