@@ -3,7 +3,7 @@ import ProfilePic from "./images/profile.jpeg";
 
 export default function About(props) {
   return (
-    <section class="py-24 px-7 md:px-24 lg:px-36 xl:px-96 grid md:grid-cols-2">
+    <section class="py-24 px-7 md:px-10 lg:px-24 xl:px-56 2xl:px-96 grid md:grid-cols-2">
       <div class="px-2">
         <h1 class="font-semibold">01. About me</h1>
         <hr></hr>
@@ -25,9 +25,6 @@ export default function About(props) {
             .Net
           </p>
           <p class="m-1 rounded-full px-2 font-bold text-sm leading-loose">
-            Angular
-          </p>
-          <p class="m-1 rounded-full px-2 font-bold text-sm leading-loose">
             Ionic
           </p>
           <p class="m-1 rounded-full px-2 font-bold text-sm leading-loose">
@@ -38,6 +35,9 @@ export default function About(props) {
           </p>
           <p class="m-1 rounded-full px-2 font-bold text-sm leading-loose">
             React
+          </p>
+          <p class="m-1 rounded-full px-2 font-bold text-sm leading-loose">
+            Golang
           </p>
           <p class="m-1 rounded-full px-2 font-bold text-sm leading-loose">
             web3

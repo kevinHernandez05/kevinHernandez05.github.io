@@ -36,7 +36,7 @@ const WorkPlaces = props => {
 
     return (
 
-        <section class="job-section md:px-24 lg:px-36 xl:px-96">
+        <section class="job-section py-24 px-7 md:px-10 lg:px-24 xl:px-56 2xl:px-96">
             {/* px-12 */}
             <div class="px-7 grid md:grid-cols-2">
                 <div class="px-2">
