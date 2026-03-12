@@ -16,7 +16,7 @@ export default function Navbar({ name }) {
     <header className="sticky top-0 z-50 border-b border-black/5 bg-white/70 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         <a
-          href="#"
+          href="#home"
           className="group flex min-w-0 items-center gap-3 transition-all duration-200"
         >
           <div className="relative shrink-0">
