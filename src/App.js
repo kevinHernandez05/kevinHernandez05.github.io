@@ -1,56 +1,31 @@
 import "./App.css";
-import { lazy, Suspense } from "react";
 
-//Components
+// Components
 import Navbar from "./components/navbar/navbar";
 import Header from "./components/header/header";
 import About from "./components/about/about";
+import ExperienceTimeline from "./components/workPlaces/workPlaces";
 import Projects from "./components/projects/projects";
-import Footer from "./components/footer/footer";
 import Contact from "./components/contact/contact";
-// import Courses from './components/courses/courses';
+import Footer from "./components/footer/footer";
 
-//konami code
+// Extras
 import KonamiCode from "./components/konamicode/konamiCode";
 import Newsletter from "./components/newsletter/newsletter";
 
-const WorkPlaces = lazy(() => import("./components/workPlaces/workPlaces"));
-
 function App() {
   return (
-    <div className="App">
-      {/* Newsletter component*/}
+    <div className="App min-h-screen bg-slate-950 text-white">
       <Newsletter />
+      <KonamiCode courseKey={"null"} />
 
-      <main className="App-header">
-        {/* Navbar */}
+      <main className="App-header min-h-screen bg-slate-950 text-white">
         <Navbar name="Kevin Hernandez" />
-
-        {/* Konami Code */}
-        <KonamiCode courseKey={"null"} />
-
-        {/* Hero Section */}
         <Header name="Kevin Hernandez" job="" />
-
-        {/* About Section */}
-        <About name="Kevin" />
-
-        {/* Work Places Section */}
-        <Suspense fallback={<div>Loading...</div>}>
-          <WorkPlaces />
-        </Suspense>
-
-        {/* Projects Section */}
-        <span className="section"></span>
+        <About name="Kevin Hernandez" />
+        <ExperienceTimeline />
         <Projects />
-
-        {/* Courses Section (TBA)*/}
-        {/* <Courses /> */}
-
-        {/* Contact Section */}
         <Contact />
-
-        {/* Footer Section */}
         <Footer />
       </main>
     </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import Konami from 'react-konami-code';
 
 
