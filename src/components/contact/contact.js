@@ -12,7 +12,7 @@ export default function Contact() {
         <div className="overflow-hidden rounded-[32px] border border-white/10 bg-white/5 p-8 shadow-xl backdrop-blur-sm sm:p-10 md:p-12">
           <div className="mx-auto max-w-2xl text-center">
             <div className="mb-5 inline-flex rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-cyan-300">
-              Let’s build something great
+              Let’s build something meaningful
             </div>
 
             <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl md:text-5xl">
@@ -20,10 +20,10 @@ export default function Contact() {
             </h2>
 
             <p className="mt-6 text-base leading-8 text-slate-400 sm:text-lg">
-              Whether it’s a product idea, a collaboration, a freelance
+              Whether it’s a product idea, an internal tool, a freelance
               opportunity, or just a good tech conversation, feel free to reach
-              out. I’m always open to talking about software, systems, and cool
-              things on the internet.
+              out. I’m always open to talking about software, systems, and
+              useful things worth building.
             </p>
 
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -31,7 +31,7 @@ export default function Contact() {
                 href="mailto:kev.hdez05@gmail.com"
                 className="inline-flex h-12 items-center justify-center rounded-full bg-white px-6 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:shadow-md"
               >
-                Say hi
+                Say hi! :D
               </a>
 
               <a

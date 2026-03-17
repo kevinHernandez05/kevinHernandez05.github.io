@@ -2,23 +2,23 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa6";
 
 import Superate from "./images/superate.png";
-import BluelyStudios from "./images/bluely.png";
+import confidential from "./images/confidential.svg";
 import ED2 from "./images/ED2.jpg";
 
 const experiences = [
   {
-    company: "Fortem Dev Services LTDA",
+    company: "Confidential Client",
     role: "Full Stack Developer",
     type: "Remote",
     period: "Jul 2023 — Present",
     location: "San José, Costa Rica",
-    image: BluelyStudios,
+    image: confidential,
     highlights: [
-      "Built and maintained high-performance web applications using .NET APIs and modern frontend technologies.",
-      "Improved responsiveness and data access patterns with Redis-based caching.",
-      "Implemented real-time communication features with SignalR.",
-      "Worked with Vue.js to craft dynamic and responsive user interfaces.",
-      "Designed solutions using SQL databases and microservices supported by RabbitMQ.",
+      "Built and maintained production web applications using .NET APIs and modern frontend technologies.",
+      "Improved responsiveness and data-access patterns through Redis-based caching.",
+      "Implemented real-time communication features using SignalR.",
+      "Developed dynamic UI flows with Vue.js for internal and client-facing experiences.",
+      "Designed backend solutions around SQL databases and RabbitMQ-supported service communication.",
     ],
   },
   {
@@ -30,10 +30,10 @@ const experiences = [
     image: Superate,
     highlights: [
       "Built and improved internal applications using ASP.NET MVC, .NET Core, React, Angular, and jQuery.",
-      "Designed APIs following REST principles and applied patterns such as Repository, Unit of Work, MVC, and MVVM.",
-      "Worked extensively with SQL Server, stored procedures, views, and complex reporting queries.",
-      "Configured Azure DevOps Server pipelines for CI/CD from development to production.",
-      "Integrated tools such as Entity Framework, Hangfire, ELMAH, AutoMapper, and NHibernate.",
+      "Designed APIs around REST principles and applied patterns such as Repository, Unit of Work, MVC, and MVVM.",
+      "Worked extensively with SQL Server, stored procedures, views, and reporting-heavy queries.",
+      "Configured Azure DevOps Server pipelines to support CI/CD across development and production environments.",
+      "Integrated tools such as Entity Framework, Hangfire, ELMAH, AutoMapper, and NHibernate into day-to-day development workflows.",
     ],
   },
   {
@@ -45,10 +45,10 @@ const experiences = [
     image: Superate,
     highlights: [
       "Developed web applications using ASP.NET MVC5, .NET Core, jQuery, and Angular.",
-      "Created new modules and features for internal tools using Razor Pages and ASP.NET MVC.",
+      "Built new modules and features for internal tools using Razor Pages and ASP.NET MVC.",
       "Worked with SQL Server for stored procedures, joins, data extraction, and application support.",
       "Analyzed and improved existing applications based on operational and user needs.",
-      "Strengthened foundations in backend development, enterprise tooling, and delivery workflows.",
+      "Strengthened my foundations in backend development, enterprise tooling, and software delivery workflows.",
     ],
   },
   {
@@ -61,7 +61,7 @@ const experiences = [
     highlights: [
       "Developed the Workbefy mobile application using Ionic, Angular, and PHP.",
       "Worked on backend integrations designed around REST principles.",
-      "Used MySQL as the relational database for the application.",
+      "Used MySQL as the relational database layer for the application.",
     ],
   },
 ];
@@ -84,9 +84,9 @@ export default function ExperienceTimeline() {
           </h2>
 
           <p className="mt-6 text-base leading-8 text-slate-400 sm:text-lg">
-            From mobile development and internal enterprise tools to full stack
-            systems and backend-oriented architecture, each role helped shape
-            how I think about software, scalability, and product execution.
+            From mobile apps and internal enterprise platforms to full stack
+            systems and backend-heavy architecture, each role helped shape how I
+            approach software, scalability, and product execution.
           </p>
         </div>
 

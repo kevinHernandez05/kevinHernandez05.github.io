@@ -3,23 +3,23 @@ import ProfilePic from "./images/profile.jpeg";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 export default function About({ name }) {
-  const technologies = [
-    ".NET / C#",
-    "Go",
-    "React",
-    "TypeScript",
-    "Ionic",
-    "Tailwind CSS",
-    "Node.js",
-    "Supabase",
-    "PostgreSQL",
-    "Docker",
-    "REST APIs",
-    "Microservices",
-    "RabbitMQ",
-    "SQL Server",
-    "Redis",
-    "Kubernetes",
+  const technologyGroups = [
+    {
+      title: "Backend & APIs",
+      items: [".NET / C#", "Go", "Node.js", "REST APIs"],
+    },
+    {
+      title: "Frontend",
+      items: ["React", "TypeScript", "Vue.js", "Tailwind CSS"],
+    },
+    {
+      title: "Data & Storage",
+      items: ["PostgreSQL", "SQL Server", "Supabase", "Redis"],
+    },
+    {
+      title: "Architecture & Messaging",
+      items: ["Microservices", "RabbitMQ", "Docker", "Kubernetes"],
+    },
   ];
 
   const stats = [
@@ -42,38 +42,28 @@ export default function About({ name }) {
           <div>
             <h2 className="max-w-3xl text-3xl font-semibold tracking-tight text-white sm:text-4xl md:text-5xl">
               Engineer, product builder, and someone who genuinely enjoys
-              turning ideas into things people can use.
+              turning ideas into useful things.
             </h2>
 
             <div className="mt-8 space-y-6 text-base leading-8 text-slate-400 sm:text-lg">
               <p>
-                Hey, I’m {name}. I’m a software engineer with{" "}
-                <span className="font-semibold text-slate-200">
-                  {calculatingYears(2018)}+ years of experience
-                </span>{" "}
-                building web apps, APIs, internal tools, and digital products
-                that solve real operational and business problems.
+                I’m a software engineer with a strong interest in building real
+                products—whether that means shipping web apps, designing
+                internal tools, improving existing systems, or exploring new
+                ideas from scratch.
               </p>
 
               <p>
-                My background started strongly in the
-                <span className="text-slate-200"> Microsoft </span>
-                and
-                <span className="text-slate-200"> JavaScript </span>
-                and over time I’ve expanded deeper into{" "}
-                <span className="text-slate-200">
-                  Go, backend architecture, distributed systems, APIs, and
-                  scalable product development
-                </span>
-                . I care about maintainability, clarity, performance, and
-                shipping software that actually makes life easier for users.
+                I enjoy working across backend, frontend, and product thinking,
+                especially when there’s a real problem to solve and a clear path
+                to make things faster, simpler, or more useful.
               </p>
 
               <p>
-                Lately, I’ve been especially focused on building SaaS products,
-                MVPs, and backend-heavy systems with a strong product mindset. I
-                like moving fast, but I also like making sure the foundations
-                are solid enough to grow.
+                Over the years, I’ve worked on production software, side
+                projects, SaaS ideas, and technical experiments. Some are built
+                for clients, some are built for businesses, and some are simply
+                me following curiosity far enough to make something real.
               </p>
             </div>
 
@@ -93,19 +83,32 @@ export default function About({ name }) {
               ))}
             </div>
 
-            <div className="mt-10">
-              <p className="mb-4 text-sm font-medium uppercase tracking-[0.18em] text-slate-300">
-                Technologies I work with
+            <div className="mt-12">
+              <p className="mb-5 text-sm font-medium uppercase tracking-[0.18em] text-slate-300">
+                Core technologies
               </p>
 
-              <div className="flex flex-wrap gap-3">
-                {technologies.map((tech) => (
-                  <span
-                    key={tech}
-                    className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-slate-200 transition hover:border-cyan-400/30 hover:bg-cyan-400/10 hover:text-cyan-300"
+              <div className="grid gap-4 sm:grid-cols-2">
+                {technologyGroups.map((group) => (
+                  <div
+                    key={group.title}
+                    className="rounded-3xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm"
                   >
-                    {tech}
-                  </span>
+                    <p className="text-sm font-semibold uppercase tracking-[0.14em] text-cyan-300">
+                      {group.title}
+                    </p>
+
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {group.items.map((item) => (
+                        <span
+                          key={item}
+                          className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-slate-200 transition hover:border-cyan-400/30 hover:bg-cyan-400/10 hover:text-cyan-300"
+                        >
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 ))}
               </div>
             </div>

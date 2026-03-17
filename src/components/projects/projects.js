@@ -7,20 +7,20 @@ import {
 
 const projects = [
   {
-    title: "A Plop’s Tale",
-    status: "Working in progress",
-    year: "2025 — Present",
+    title: "NuGet Lens",
+    status: "In active development",
+    year: "2026 — Present",
     image: "",
     description:
-      "An indie pixel-art game built in Unity featuring 2D platforming, turn-based combat, world progression, dialogue systems, and a narrative-driven adventure.",
-    tags: ["Unity", "C#", "Game Dev", "Pixel Art", "Combat Systems"],
+      "A desktop tool for visually inspecting dependencies across large .NET solutions. It helps surface package relationships, project references, and version conflicts in a way that’s easier to understand than raw project files and terminal output.",
+    tags: [".NET", "C#", "Tauri", "Rust", "React", "Developer Tooling"],
     href: "",
     github: "",
-    featured: false,
+    featured: true,
   },
   {
     title: "Qiknest",
-    status: "Working in progress",
+    status: "In active development",
     year: "2024 — Present",
     image: "",
     description:
@@ -32,11 +32,11 @@ const projects = [
   },
   {
     title: "Dental",
-    status: "Working in progress",
+    status: "Live product",
     year: "2025 — Present",
     image: "",
     description:
-      "A healthcare-oriented SaaS for appointment scheduling, patient records, reminders, confirmations, and operational workflows, built to be reusable across medical niches.",
+      "A healthcare-oriented SaaS for appointments, patient records, reminders, confirmations, and operational workflows, designed to be reusable across medical niches.",
     tags: ["React", "Supabase", "Deno", "SaaS", "Healthcare"],
     href: "https://dental.wbkrd.com",
     github: "",
@@ -44,7 +44,7 @@ const projects = [
   },
   {
     title: "Remotering.dev",
-    status: "Working in progress",
+    status: "In active development",
     year: "2025 — Present",
     image: "",
     description:
@@ -56,7 +56,7 @@ const projects = [
   },
   {
     title: "Mekanico",
-    status: "Working in progress",
+    status: "In active development",
     year: "2025 — Present",
     image: "",
     description:
@@ -64,11 +64,11 @@ const projects = [
     tags: ["Ionic", "React", "Supabase", "Automotive", "Timeline UX"],
     href: "",
     github: "",
-    featured: true,
+    featured: false,
   },
   {
     title: "Elementary",
-    status: "Working in progress",
+    status: "In active development",
     year: "2025 — Present",
     image: "",
     description:
@@ -76,8 +76,20 @@ const projects = [
     tags: ["React", "Supabase", "CRM", "Marketing", "SaaS"],
     href: "",
     github: "",
-    featured: true,
-  }
+    featured: false,
+  },
+  {
+    title: "A Plop’s Tale",
+    status: "In development",
+    year: "2025 — Present",
+    image: "",
+    description:
+      "An indie pixel-art game built in Unity featuring 2D platforming, turn-based combat, dialogue systems, world progression, and a narrative-driven adventure.",
+    tags: ["Unity", "C#", "Game Dev", "Pixel Art", "Combat Systems"],
+    href: "",
+    github: "",
+    featured: false,
+  },
 ];
 
 export default function Projects() {
@@ -106,16 +118,34 @@ export default function Projects() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-6 lg:grid-cols-2">
-          {featuredProjects.map((project) => (
-            <ProjectCard key={project.title} project={project} large />
-          ))}
+        <div className="mt-14">
+          <div className="mb-6">
+            <h3 className="text-xl font-semibold text-white sm:text-2xl">
+              Featured work
+            </h3>
+            <p className="mt-2 text-sm leading-7 text-slate-400 sm:text-[15px]">
+              A few of the products and tools that best represent how I like to
+              build: practical, system-oriented, and grounded in real use cases.
+            </p>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-2">
+            {featuredProjects.map((project) => (
+              <ProjectCard key={project.title} project={project} large />
+            ))}
+          </div>
         </div>
 
         <div className="mt-16">
           <h3 className="text-xl font-semibold text-white sm:text-2xl">
             More things I’m building
           </h3>
+
+          <p className="mt-2 max-w-3xl text-sm leading-7 text-slate-400 sm:text-[15px]">
+            Not everything I build is a polished product or a public launch.
+            Some things begin as experiments, side projects, or ideas I care
+            enough about to keep pushing forward.
+          </p>
 
           <div className="mt-6 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {moreProjects.map((project) => (

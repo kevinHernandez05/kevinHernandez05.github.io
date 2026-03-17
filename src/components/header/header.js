@@ -17,13 +17,14 @@ export default function Header({ name, job }) {
           </h1>
 
           <h2 className="mt-4 max-w-2xl text-3xl font-medium leading-tight text-slate-300 sm:text-4xl md:text-5xl">
-            I build stuff for the internet.
+            I build software, tools, and digital products for the internet.{" "}
           </h2>
 
           <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-400 sm:text-xl">
-            I’m a software engineer focused on building reliable, scalable, and
-            polished digital products. I also enjoy designing thoughtful user
-            experiences when needed. Currently, {workingPlace(job)}
+            I’m a software engineer focused on building reliable products,
+            practical digital tools, and systems that people can actually use. I
+            work across backend, frontend, and product execution. Currently,{" "}
+            {workingPlace(job)}
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-3">
