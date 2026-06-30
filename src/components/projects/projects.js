@@ -3,9 +3,62 @@ import {
   FaArrowUpRightFromSquare,
   FaGithub,
   FaCodeBranch,
+  FaFilePdf,
 } from "react-icons/fa6";
 
 const projects = [
+  {
+    title: "FinalRoom",
+    status: "Live product",
+    year: "2025 — Present",
+    image: "/projects/finalroom.png",
+    description:
+      "A client portal SaaS for freelancers and small service teams. It helps manage clients, projects, agreements, deliverables, payments, milestones, and client-facing project rooms from one clean workspace.",
+    tags: ["React", "Supabase", "SaaS", "Client Portal", "Product Design"],
+    href: "https://www.finalroom.app",
+    github: "",
+    caseStudyHref: "/case-studies/finalroom-case-study.pdf",
+    featured: true,
+  },
+  {
+    title: "Qiknest",
+    status: "Live product",
+    year: "2024 — Present",
+    image: "/projects/qiknest.png",
+    description:
+      "A modular SaaS platform for business operations, focused on giving small businesses a flexible place to shape systems around KPIs, analytics, operational workflows, and internal tools.",
+    tags: ["React", "Supabase", "SaaS", "Analytics", "Business Tools"],
+    href: "https://qiknest.wbkrd.com",
+    github: "",
+    caseStudyHref: "/case-studies/qiknest-case-study.pdf",
+    featured: true,
+  },
+  {
+    title: "Remotering.dev",
+    status: "In active development",
+    year: "2025 — Present",
+    image: "/projects/the-remotering.png",
+    description:
+      "A remote job platform focused on helping candidates and recruiters connect through a cleaner, more curated experience with role filtering, better discovery, and tailored hiring flows.",
+    tags: ["React", "Supabase", "Job Board", "Remote Work", "Product Design"],
+    href: "https://remotering.dev",
+    github: "",
+    caseStudyHref: "/case-studies/remotering-case-study.pdf",
+    featured: true,
+  },
+  {
+    title: "FocusZip",
+    status: "In active development",
+    year: "2026 — Present",
+    image: "/projects/focuszip.png",
+    description:
+      "A lightweight brain-training and daily challenge app built around quick mental games, streak-friendly flows, premium features, and a non-intrusive ad experience inspired by casual learning apps.",
+    tags: ["React", "Ionic", "TypeScript", "Mobile UX", "Brain Games"],
+    href: "",
+    github: "",
+    caseStudyHref: "/case-studies/focuszip-case-study.pdf",
+    featured: true,
+  },
   {
     title: "NuGet Lens",
     status: "In active development",
@@ -16,43 +69,8 @@ const projects = [
     tags: [".NET", "C#", "Tauri", "Rust", "React", "Developer Tooling"],
     href: "",
     github: "",
-    featured: true,
-  },
-  {
-    title: "Qiknest",
-    status: "In active development",
-    year: "2024 — Present",
-    image: "",
-    description:
-      "A modular SaaS platform for business operations, designed to support POS, analytics, invoicing, and other business tools through a scalable product ecosystem.",
-    tags: ["Go", "React", "Supabase", "SaaS", "POS", "Analytics"],
-    href: "",
-    github: "",
-    featured: true,
-  },
-  {
-    title: "Dental",
-    status: "Live product",
-    year: "2025 — Present",
-    image: "",
-    description:
-      "A healthcare-oriented SaaS for appointments, patient records, reminders, confirmations, and operational workflows, designed to be reusable across medical niches.",
-    tags: ["React", "Supabase", "Deno", "SaaS", "Healthcare"],
-    href: "https://dental.wbkrd.com",
-    github: "",
-    featured: true,
-  },
-  {
-    title: "Remotering.dev",
-    status: "In active development",
-    year: "2025 — Present",
-    image: "",
-    description:
-      "A remote job platform focused on helping candidates and recruiters connect through a cleaner, more curated experience with role filtering and tailored flows.",
-    tags: ["React", "Supabase", "Job Board", "Product Design"],
-    href: "",
-    github: "",
-    featured: true,
+    caseStudyHref: "",
+    featured: false,
   },
   {
     title: "Mekanico",
@@ -64,6 +82,7 @@ const projects = [
     tags: ["Ionic", "React", "Supabase", "Automotive", "Timeline UX"],
     href: "",
     github: "",
+    caseStudyHref: "",
     featured: false,
   },
   {
@@ -76,18 +95,7 @@ const projects = [
     tags: ["React", "Supabase", "CRM", "Marketing", "SaaS"],
     href: "",
     github: "",
-    featured: false,
-  },
-  {
-    title: "A Plop’s Tale",
-    status: "In development",
-    year: "2025 — Present",
-    image: "",
-    description:
-      "An indie pixel-art game built in Unity featuring 2D platforming, turn-based combat, dialogue systems, world progression, and a narrative-driven adventure.",
-    tags: ["Unity", "C#", "Game Dev", "Pixel Art", "Combat Systems"],
-    href: "",
-    github: "",
+    caseStudyHref: "",
     featured: false,
   },
 ];
@@ -174,7 +182,7 @@ function ProjectCard({ project, large = false }) {
         ) : (
           <img
             src={project.image}
-            alt={project.title}
+            alt={`${project.title} project preview`}
             onError={() => setImageError(true)}
             className={`w-full object-cover transition duration-500 group-hover:scale-[1.02] ${
               large ? "h-64 sm:h-72" : "h-52"
@@ -223,8 +231,22 @@ function ProjectCard({ project, large = false }) {
               <FaArrowUpRightFromSquare className="h-3.5 w-3.5" />
             </a>
           ) : (
-            <span className="text-sm text-slate-500">Private / in progress</span>
+            <span className="text-sm text-slate-500">
+              Private / in progress
+            </span>
           )}
+
+          {project.caseStudyHref ? (
+            <a
+              href={project.caseStudyHref}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 text-sm font-medium text-slate-300 transition hover:text-white"
+            >
+              Case study
+              <FaFilePdf className="h-3.5 w-3.5" />
+            </a>
+          ) : null}
 
           {project.github ? (
             <a
