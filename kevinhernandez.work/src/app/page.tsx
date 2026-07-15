@@ -7,6 +7,7 @@ import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import FeaturedWork from "@/components/sections/FeaturedWork";
 import Experience from "@/components/sections/Experience";
+import Writing from "@/components/sections/Writing";
 
 import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 
@@ -31,26 +32,43 @@ const experiments = [
   },
 ];
 
+export const revalidate = 3600;
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#f7f7f4] text-neutral-950">
+    <main className="min-h-screen bg-[#fafaf7] text-neutral-950">
       <Navbar />
 
-      <Hero />
+      <SectionAnchor id="home">
+        <Hero />
+      </SectionAnchor>
 
-      <About />
+      <SectionAnchor id="about">
+        <About />
+      </SectionAnchor>
 
-      <FeaturedWork />
+      <SectionAnchor id="work">
+        <FeaturedWork />
+      </SectionAnchor>
 
-      <MoreThings />
+      <SectionAnchor id="more">
+        <MoreThings />
+      </SectionAnchor>
 
-      <Experience />
+      <SectionAnchor id="experience">
+        <Experience />
+      </SectionAnchor>
 
-      <Recommendations />
+      <SectionAnchor id="recommendations">
+        <Recommendations />
+      </SectionAnchor>
 
-      <Writing />
+      <SectionAnchor id="writing">
+        <Writing />
+      </SectionAnchor>
 
-      <ContactFooter />
+      <SectionAnchor id="contact">
+        <ContactFooter />
+      </SectionAnchor>
     </main>
   );
 }
@@ -93,53 +111,6 @@ function MoreThings() {
               </article>
             ))}
           </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function Writing() {
-  return (
-    <section className="px-6 py-12 lg:px-8">
-      <div className="mx-auto max-w-7xl border-t border-black/10 pt-12">
-        <div className="flex flex-wrap items-end justify-between gap-6">
-          <div>
-            <SectionEyebrow>Recent writing</SectionEyebrow>
-            <h2 className="mt-3 max-w-lg text-3xl font-medium leading-tight tracking-[-0.04em]">
-              Thoughts on building, engineering, and growth.
-            </h2>
-          </div>
-
-          <a
-            href="https://blog.kevinhernandez.work"
-            target="_blank"
-            rel="noreferrer"
-            className="text-sm font-semibold text-neutral-600 transition hover:text-neutral-950"
-          >
-            View all posts →
-          </a>
-        </div>
-
-        <div className="mt-8 grid gap-4 md:grid-cols-3">
-          {[
-            "Why I Built NuGet Lens",
-            "Building SaaS Products as a Solo Developer",
-            "Designing Tools Around Real Problems",
-          ].map((title) => (
-            <article
-              key={title}
-              className="rounded-[1.5rem] border border-black/10 bg-white p-6 shadow-sm"
-            >
-              <p className="text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
-                Blog
-              </p>
-              <h3 className="mt-3 text-lg font-semibold leading-snug">
-                {title}
-              </h3>
-              <p className="mt-4 text-sm text-neutral-500">Read article →</p>
-            </article>
-          ))}
         </div>
       </div>
     </section>
@@ -301,5 +272,19 @@ function TwitterIcon({ className = "h-4 w-4" }: { className?: string }) {
     >
       <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.657l-5.214-6.817-5.966 6.817H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z" />
     </svg>
+  );
+}
+
+function SectionAnchor({
+  id,
+  children,
+}: {
+  id: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div id={id} className="scroll-mt-28">
+      {children}
+    </div>
   );
 }

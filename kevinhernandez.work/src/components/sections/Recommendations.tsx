@@ -22,7 +22,8 @@ const recommendations = [
   },
   {
     name: "Rousbel Villar",
-    title: "Full-Stack Engineer | Angular · Flask · Golang | 5+ Years Experience",
+    title:
+      "Full-Stack Engineer | Angular · Flask · Golang | 5+ Years Experience",
     relationship: "Rousbel studied with Kevin",
     date: "Jul 27, 2021",
     avatarUrl:
@@ -47,15 +48,13 @@ export default function Recommendations() {
       <div className="mx-auto max-w-7xl border-t border-black/10 pt-16">
         <div className="mb-10 grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
           <div>
-            <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#a6b300]">
+            <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#38bdf8]">
               Recommendations
             </p>
-
             <h2 className="mt-3 max-w-xl text-4xl font-medium leading-tight tracking-[-0.05em] text-neutral-950 sm:text-5xl">
               People I’ve worked with.
             </h2>
-
-            <div className="mt-5 h-1 w-14 bg-[#ecff00]" />
+            <div className="mt-5 h-1 w-14 bg-[#38bdf8]" />{" "}
           </div>
 
           <p className="max-w-2xl text-base leading-8 text-neutral-600">

@@ -6,11 +6,18 @@ import {
   SiTypescript,
   SiNextdotjs,
   SiSupabase,
-  SiH2Database,
   SiTailwindcss,
   SiRust,
 } from "react-icons/si";
-import { TbPencil, TbCloud, TbDatabase, TbCode } from "react-icons/tb";
+import {
+  TbBuildingStore,
+  TbChartBar,
+  TbCloud,
+  TbCode,
+  TbDatabase,
+  TbPencil,
+  TbTrendingUp,
+} from "react-icons/tb";
 
 const technologies = [
   {
@@ -52,66 +59,82 @@ const technologies = [
   {
     name: "Rust",
     icon: SiRust,
-  }
+  },
+  {
+    name: "SaaS",
+    icon: TbCloud,
+  },
+  {
+    name: "Product Design",
+    icon: TbPencil,
+  },
 ];
 
 const strengths = [
   {
-    title: "Full Stack Engineering",
+    title: "Growth Engineering",
     description:
-      "Building frontend experiences, APIs, data models, and backend systems that work together.",
+      "Building landing pages, conversion flows, product experiments, and useful web experiences that help people discover and try software.",
+    icon: TbTrendingUp,
+  },
+  {
+    title: "Marketing Systems",
+    description:
+      "Connecting content, analytics, CRM workflows, and product data into systems that help teams move faster.",
+    icon: TbChartBar,
+  },
+  {
+    title: "Full Stack Product Work",
+    description:
+      "Shipping frontend experiences, APIs, dashboards, data models, and backend logic across complete product flows.",
     icon: TbCode,
   },
   {
-    title: "Product Thinking",
+    title: "Small Business SaaS",
     description:
-      "Turning ideas into useful workflows, MVPs, and systems that solve real problems.",
-    icon: TbPencil,
-  },
-  {
-    title: "Data & Systems",
-    description:
-      "Designing business logic, dashboards, metrics, and reliable persistence layers.",
-    icon: TbDatabase,
-  },
-  {
-    title: "Cloud-ready Builds",
-    description:
-      "Shipping practical software with modern tools, clean structure, and scalable foundations.",
-    icon: TbCloud,
+      "Designing tools around real business needs: leads, metrics, websites, stores, workflows, and operational visibility.",
+    icon: TbBuildingStore,
   },
 ];
 
 export default function About() {
   return (
-    <section id="about" className="bg-[#fafaf7] px-6 py-16 sm:px-10 lg:px-16 xl:px-24">
+    <section
+      id="about"
+      className="bg-[#fafaf7] px-6 py-16 sm:px-10 lg:px-16 xl:px-24"
+    >
       <div className="mx-auto max-w-7xl">
         <div className="rounded-[2rem] border border-black/10 bg-white p-7 shadow-sm sm:p-9 lg:p-10">
           <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr]">
             <div>
               <SectionEyebrow>About me</SectionEyebrow>
-
               <h2 className="mt-4 max-w-xl text-3xl font-medium leading-tight tracking-[-0.05em] text-neutral-950 sm:text-4xl lg:text-5xl">
-                Engineer, product builder, and someone who genuinely enjoys
-                turning ideas into useful things.
+                I build full stack products at the intersection of engineering,
+                product, and growth.
               </h2>
-
-              <div className="mt-6 h-1 w-14 bg-[#ecff00]" />
+              <div className="mt-6 h-1 w-14 bg-[#38bdf8]" />{" "}
             </div>
 
             <div>
               <div className="space-y-5 text-base leading-8 text-neutral-600">
                 <p>
-                  I’m a Full Stack Software Engineer focused on building reliable
-                  software, clean interfaces, and practical systems that help
-                  people and businesses move faster.
+                  I’m a Full Stack Software Engineer building SaaS products,
+                  developer tools, and growth-oriented web systems.
                 </p>
 
                 <p>
-                  I enjoy working across the stack, from frontend experiences to
-                  backend services, databases, integrations, and product workflows.
-                  Most of my work lives at the intersection of engineering,
-                  product, and business operations.
+                  My work sits at the intersection of engineering, product, and
+                  marketing: landing pages, internal tools, dashboards, content
+                  workflows, analytics-ready experiences, and the backend logic
+                  that makes them useful.
+                </p>
+
+                <p>
+                  Lately, I’ve been building Qiknest, a modular business
+                  workspace for small teams where I explore product-led growth,
+                  CRM workflows, KPI dashboards, website building, store flows,
+                  and practical systems that help small businesses understand
+                  and grow their operations.
                 </p>
               </div>
 
@@ -133,6 +156,7 @@ export default function About() {
                           <h3 className="text-sm font-semibold text-neutral-950">
                             {item.title}
                           </h3>
+
                           <p className="mt-1 text-sm leading-6 text-neutral-600">
                             {item.description}
                           </p>
@@ -174,8 +198,9 @@ export default function About() {
 
 function SectionEyebrow({ children }: { children: React.ReactNode }) {
   return (
-    <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#a6b300]">
+    <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#38bdf8]">
       {children}
     </p>
   );
+
 }

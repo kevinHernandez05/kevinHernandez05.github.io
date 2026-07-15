@@ -186,7 +186,7 @@ export default function Experience() {
 
         <div className="mt-10 flex justify-center sm:justify-start">
           <a
-            href="/Kevin-Hernandez-CV.pdf"
+            href="/resume.pdf"
             target="_blank"
             rel="noreferrer"
             className="inline-flex h-12 items-center justify-center rounded-full border border-neutral-300 bg-white px-6 text-sm font-semibold text-neutral-950 shadow-sm transition hover:-translate-y-0.5 hover:border-neutral-950"
@@ -223,7 +223,7 @@ function TimelineItem({
 
       <div className="absolute left-0 top-7 hidden md:flex">
         <div className="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 bg-[#fafaf7]">
-          <div className="h-3 w-3 rounded-full bg-[#ecff00] ring-4 ring-neutral-950" />
+          <div className="h-3 w-3 rounded-full bg-[#38bdf8] ring-4 ring-neutral-950" />{" "}
         </div>
       </div>
 
@@ -288,7 +288,7 @@ function TimelineItem({
 
 function SectionEyebrow({ children }: { children: React.ReactNode }) {
   return (
-    <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#a6b300]">
+    <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#38bdf8]">
       {children}
     </p>
   );
